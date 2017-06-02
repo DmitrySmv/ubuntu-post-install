@@ -10,9 +10,7 @@ then
 else
     mkdir -p ~/.bash
     git clone git://github.com/jimeh/git-aware-prompt.git "$HOME/.bash/$NAME"
-
-    printf "\nexport GITAWAREPROMPT=~/.bash/$NAME\n" >> $BASH_PROFILE
-    echo "source \"\${GITAWAREPROMPT}/main.sh\"" >> $BASH_PROFILE
+    cat $PWD/install/.git-aware-prompt-bashrc >> $BASH_PROFILE
 
     echo "$NAME installed"
 fi
