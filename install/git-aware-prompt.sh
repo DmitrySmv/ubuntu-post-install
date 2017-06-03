@@ -10,7 +10,7 @@ then
 else
     mkdir -p ~/.bash
     git clone git://github.com/jimeh/git-aware-prompt.git "$HOME/.bash/$NAME"
-    cat $PWD/install/.git-aware-prompt-bashrc >> $BASH_PROFILE
+    cat $PWD/data/.git-aware-prompt-bashrc >> $BASH_PROFILE
 
     echo "$NAME installed"
 fi
